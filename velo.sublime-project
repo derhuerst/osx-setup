@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "osx-setup",
+			"folder_exclude_patterns": [
+				"src"
+			],
+			"file_exclude_patterns": [
+				"*.sublime-workspace"
+			]
+		},
+		{
+			"path": "./src",
+			"name": "src"
+		}
+	],
+	"settings": {
+		"tab_size": 4,
+		"translate_tabs_to_spaces": false
+	}
+}
