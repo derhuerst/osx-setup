@@ -4,15 +4,15 @@
 			"path": ".",
 			"name": "osx-setup",
 			"folder_exclude_patterns": [
-				"src"
+				"lib"
 			],
 			"file_exclude_patterns": [
 				"*.sublime-workspace"
 			]
 		},
 		{
-			"path": "./src",
-			"name": "src"
+			"path": "./lib",
+			"name": "lib"
 		}
 	],
 	"settings": {
