@@ -23,8 +23,10 @@ brew install \
 	unrar \
 	wget \
 	zsh \
+	zsh-completions \
 	ssh-copy-id \
 	megacmd
+brew tap bfontaine/aliases
 
 
 
