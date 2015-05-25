@@ -1,7 +1,7 @@
 # osx-setup – Jumpstart OS X.
 
 - [shrinks the default OS X installation](lib/shrink.sh)
-- installs [developer stuff](lib/shrink.sh) like [Homebrew](http://brew.sh/), [node.js](https://nodejs.org/) and [the Z Shell](http://zsh.sourceforge.net/Intro/intro_toc.html)
+- installs [developer stuff](lib/install.sh) like [Homebrew](http://brew.sh/), [node.js](https://nodejs.org/) and [the Z Shell](http://zsh.sourceforge.net/Intro/intro_toc.html)
 - sets [opinionated developer-friends defaults](lib/defaults.sh)
 - installs [my dotfiles](https://github.com/derhuerst/dotfiles)
 
