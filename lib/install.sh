@@ -97,6 +97,8 @@ for app in "${external[@]}"; do
 	unzip -nq "$app" -d ./test
 done
 
+ln -s /System/Library/CoreServices/Applications/Screen\ Sharing.app /Applications/Screen\ Sharing.app
+
 
 
 qlmanage -r
