@@ -32,9 +32,11 @@ brew tap bfontaine/aliases
 
 npm install -g \
 	coffee-script \
+	gulp \
 	http-server \
+	http-console \
 	spot \
-	svgo
+	forever
 
 
 
