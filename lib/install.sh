@@ -23,6 +23,7 @@ brew install \
 	unrar \
 	wget \
 	nmap \
+	speedtest_cli \
 	zsh \
 	zsh-completions \
 	ssh-copy-id \
