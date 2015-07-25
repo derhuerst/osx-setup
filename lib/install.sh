@@ -22,6 +22,7 @@ brew install \
 	node \
 	unrar \
 	wget \
+	nmap \
 	zsh \
 	zsh-completions \
 	ssh-copy-id \
