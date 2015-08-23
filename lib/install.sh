@@ -27,6 +27,7 @@ brew install \
 	zsh \
 	zsh-completions \
 	ssh-copy-id \
+	tree \
 	megacmd
 brew tap bfontaine/aliases
 
