@@ -104,6 +104,10 @@ done
 
 ln -s /System/Library/CoreServices/Applications/Screen\ Sharing.app /Applications/Screen\ Sharing.app
 
+# German coding keyboard layout by @bitboxer
+curl -sSL -o ~/Library/Keyboard\ Layouts/de-code.keylayout https://raw.githubusercontent.com/bitboxer/de-coding.keylayout/master/Deutsch%20%28Programmieren%29.keylayout
+curl -sSL -o ~/Library/Keyboard\ Layouts/de-code.icns https://raw.githubusercontent.com/bitboxer/de-coding.keylayout/master/Deutsch%20%28Programmieren%29.icns
+
 
 
 qlmanage -r
