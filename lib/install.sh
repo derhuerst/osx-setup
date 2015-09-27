@@ -39,7 +39,8 @@ npm install -g \
 	http-server \
 	http-console \
 	spot \
-	forever
+	forever \
+	node-inspector
 
 
 
