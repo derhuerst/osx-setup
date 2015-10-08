@@ -19,6 +19,7 @@ fi
 brew install \
 	git \
 	hub \
+	git-flow \
 	node \
 	unrar \
 	wget \
