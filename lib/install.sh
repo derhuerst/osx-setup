@@ -41,7 +41,8 @@ npm install -g \
 	http-console \
 	spot \
 	forever \
-	node-inspector
+	node-inspector \
+	localtunnel
 
 
 
