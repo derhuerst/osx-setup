@@ -214,13 +214,13 @@ if ask 'Clear Dock & put useful apps inside?'; then
 		'Messages.app' \
 		'Telegram.app' \
 		'Telephone.app' \
-		'Mumble.app' \
+		'Skype.app' \
+		'Gitter.app' \
 		'spacer' \
 		'Firefox.app' \
 		'Safari.app' \
 		'Google Chrome.app' \
 		'spacer' \
-		'Sublime Text 2.app' \
 		'Sublime Text.app' \
 		'Utilities/Terminal.app' \
 		'Marked 2.app' \
