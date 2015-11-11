@@ -24,6 +24,7 @@ brew install \
 	unrar \
 	wget \
 	nmap \
+	fzf \
 	speedtest_cli \
 	zsh \
 	zsh-completions \
