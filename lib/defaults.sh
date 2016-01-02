@@ -211,11 +211,10 @@ if ask 'Clear Dock & put useful apps inside?'; then
 		'spacer' \
 		'Mail.app' \
 		'Notes.app' \
-		'Messages.app' \
 		'Telegram.app' \
 		'Telephone.app' \
+		'Slack.app' \
 		'Skype.app' \
-		'Gitter.app' \
 		'spacer' \
 		'Firefox.app' \
 		'Safari.app' \
@@ -226,11 +225,6 @@ if ask 'Clear Dock & put useful apps inside?'; then
 		'Marked 2.app' \
 		'iA Writer.app' \
 		'Transmit.app' \
-		'Sketch.app' \
-		'spacer' \
-		'VLC.app' \
-		'iTunes.app' \
-		'HandBrake.app' \
 		'spacer'
 	)
 	writeDockItems $apps
