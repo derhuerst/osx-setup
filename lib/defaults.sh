@@ -13,6 +13,10 @@ printf "Thanks.\n\n"
 
 
 
+if ask 'Disable startup sound?'; then
+	sudo nvram SystemAudioVolume=%80
+fi
+
 if ask 'Increase window resize speed for Cocoa applications?'; then
 	defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 fi
