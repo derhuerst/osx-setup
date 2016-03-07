@@ -14,7 +14,7 @@ printf "Thanks.\n\n"
 
 
 if ask 'Disable startup sound?'; then
-	sudo nvram SystemAudioVolume=%80
+	sudo nvram SystemAudioVolume=" "
 fi
 
 if ask 'Increase window resize speed for Cocoa applications?'; then
