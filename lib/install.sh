@@ -17,12 +17,14 @@ brew install \
 	wget \
 	fzf \
 	speedtest_cli \
-	zsh \
-	zsh-completions \
+	fish \
 	ssh-copy-id \
 	tree
 brew tap bfontaine/aliases
 
+if [ $(cat /private/etc/shells | grep $(which fish) | wc -l) -eq 0 ]; then
+	sudo bash -c "echo $(which fish) >> /private/etc/shells"
+fi
 
 
 npm install -g \
@@ -89,3 +91,8 @@ ln -s /System/Library/CoreServices/Applications/Screen\ Sharing.app /Application
 brew cleanup
 brew cask cleanup
 npm cache -g clean
+
+
+
+curl -sL get.fisherman.sh | fish
+fisher install z
