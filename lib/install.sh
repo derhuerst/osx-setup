@@ -96,3 +96,6 @@ npm cache -g clean
 
 curl -sL get.fisherman.sh | fish
 fisher install z
+
+# temporarily use NVM, see npm/npm#5082
+fisher install edc/bass
