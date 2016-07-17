@@ -35,7 +35,8 @@ npm install -g \
 	spot \
 	forever \
 	node-inspector \
-	localtunnel
+	localtunnel \
+	npm-name-cli
 
 
 
@@ -94,4 +95,4 @@ npm cache -g clean
 
 
 
-curl -sL get.fisherman.sh | fish
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
