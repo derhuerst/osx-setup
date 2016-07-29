@@ -28,15 +28,12 @@ fi
 
 
 npm install -g \
-	coffee-script \
-	gulp \
 	http-server \
-	http-console \
 	spot \
 	forever \
-	node-inspector \
 	localtunnel \
-	npm-name-cli
+	npm-name-cli \
+	spoof
 
 
 
