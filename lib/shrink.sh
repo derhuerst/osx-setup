@@ -78,6 +78,10 @@ if ask 'Delete Migration Assistant.app?'; then
 	sudo rm -rf '/Applications/Utilities/Migration Assistant.app'
 fi
 
+if ask 'Delete Photo Library Migration Utility.app?'; then
+	sudo rm -rf '/System/Library/CoreServices/Photo Library Migration Utility.app'
+fi
+
 if ask 'Delete every voice except Alex?'; then
 	sudo rm -rf /System/Library/Speech/Voices/!(Alex.speechVoice)
 	if ask 'Delete Alex as well?'; then

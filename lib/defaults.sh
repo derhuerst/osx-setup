@@ -288,10 +288,9 @@ if ask 'Trackpad: Two-finger tap for right click?'; then
 	defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 fi
 
-if ask 'Trackpad: Swipe between spaces with three fingers?'; then
-	defaults write NSGlobalDomain AppleEnableSwipeNavigateWithScrolls -bool true
-	defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerHorizSwipeGesture -int 1
-	defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -int 1
+if ask 'Enable dragging with three fingers?'; then
+	defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+	defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 fi
 
 
