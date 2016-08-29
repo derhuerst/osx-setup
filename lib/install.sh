@@ -19,7 +19,8 @@ brew install \
 	speedtest_cli \
 	fish \
 	ssh-copy-id \
-	tree
+	tree \
+	keybase gpg
 brew tap bfontaine/aliases
 
 if [ $(cat /private/etc/shells | grep $(which fish) | wc -l) -eq 0 ]; then
@@ -30,10 +31,14 @@ fi
 npm install -g \
 	http-server \
 	spot \
-	forever \
 	localtunnel \
 	npm-name-cli \
-	spoof
+	spoof \
+	coup-letmein \
+	coup-lights \
+	pkgfiles \
+	time-tracking \
+	url-decode-encode-cli
 
 
 
