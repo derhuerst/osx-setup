@@ -33,6 +33,10 @@ if ask 'Delete all default wallpapers?'; then
 	fi
 fi
 
+if ask 'Delete all slideshow screensavers?'; then
+	sudo rm -rf /Library/Screen\ Savers/Default\ Collections/*
+fi
+
 for dictionary in /Library/Dictionaries/*; do
 	if ask "Delete $(basename "$dictionary")?"; then
 		sudo rm -rf $dictionary
@@ -83,9 +87,9 @@ if ask 'Delete Photo Library Migration Utility.app?'; then
 fi
 
 if ask 'Delete every voice except Alex?'; then
-	sudo rm -rf /System/Library/Speech/Voices/!(Alex.speechVoice)
+	sudo rm -rf /System/Library/Speech/Voices/!(Alex.SpeechVoice)
 	if ask 'Delete Alex as well?'; then
-		sudo rm -rf /System/Library/Speech/Voices/Alex.speechVoice
+		sudo rm -rf /System/Library/Speech/Voices/Alex.SpeechVoice
 	fi
 fi
 
@@ -110,15 +114,6 @@ if ask 'Delete emacs from BSD?'; then
 	sudo rm -rf /usr/share/man/man1/emacs.1
 	sudo rm -rf /usr/share/man/man1/emacsclient.1
 	sudo rm -rf /usr/share/man/man8/dumpemacs.8
-fi
-
-if ask 'Delete tokenizer from BSD (for Japanese and Chinese)?'; then
-	sudo rm -rf /usr/share/tokenizer/*
-fi
-
-if ask 'Delete mecabra from BSD (for Chinese and Korean)?'; then
-	sudo rm -rf /usr/share/mecabra/*
-	sudo rm -rf /usr/lib/libmecabra.dylib
 fi
 
 if ask 'Delete Ainu input method (for Japanese)?'; then

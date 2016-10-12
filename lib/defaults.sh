@@ -258,11 +258,11 @@ fi
 # Keyboard & Mouse
 
 if ask 'Set a very fast keyboard repeat rate?'; then
-	defaults write NSGlobalDomain KeyRepeat -int 1.5
+	defaults write NSGlobalDomain KeyRepeat -int 1
 fi
 
 if ask 'Set a short Delay until key repeat?'; then
-	defaults write NSGlobalDomain InitialKeyRepeat -int 15
+	defaults write NSGlobalDomain InitialKeyRepeat -int 12
 fi
 
 if ask 'Enable full keyboard access for all controls?'; then
