@@ -116,30 +116,6 @@ if ask 'Delete emacs from BSD?'; then
 	sudo rm -rf /usr/share/man/man8/dumpemacs.8
 fi
 
-if ask 'Delete Ainu input method (for Japanese)?'; then
-	sudo rm -rf /System/Library/Input\ Methods/AinuIM.app
-fi
-
-if ask 'Delete Hindi input method?'; then
-	sudo rm -rf /System/Library/Input\ Methods/HindiIM.app
-fi
-
-if ask 'Delete Japanese input method?'; then
-	sudo rm -rf /System/Library/Input\ Methods/JapaneseIM.app
-fi
-
-if ask 'Delete Korean input method?'; then
-	sudo rm -rf /System/Library/Input\ Methods/KoreanIM.app
-fi
-
-if ask 'Delete Tamil input method?'; then
-	sudo rm -rf /System/Library/Input\ Methods/TamilIM.app
-fi
-
-if ask 'Delete Vietnamese input method?'; then
-	sudo rm -rf /System/Library/Input\ Methods/VietnameseIM.app
-fi
-
 if ask 'Add /bin and /sbin to Spotlight?'; then
 	mdimport /bin
 	mdimport /sbin

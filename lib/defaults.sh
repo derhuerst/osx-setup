@@ -170,8 +170,8 @@ if ask 'Show indicator lights for open applications in the Dock?'; then
 	defaults write com.apple.dock show-process-indicators -bool true
 fi
 
-if ask 'Set the icon size of Dock items to 46 pixels?'; then
-	defaults write com.apple.dock tilesize -int 46
+if ask 'Set the icon size of Dock items to 40 pixels?'; then
+	defaults write com.apple.dock tilesize -int 40
 fi
 
 if ask 'Automatically hide and show the Dock?'; then
@@ -246,7 +246,7 @@ if ask 'Hide Dashboard as a Space?'; then
 fi
 
 if ask 'Show & hide Mission Control instantly.'; then
-	defaults write com.apple.dock expose-animation-duration -float 0
+	defaults write com.apple.dock expose-animation-duration -float 0.1
 fi
 
 if ask 'Stop rearranging Spaces based on recent use?'; then
