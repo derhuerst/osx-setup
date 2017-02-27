@@ -7,20 +7,26 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 
-
 brew install \
+	asciinema \
 	git \
 	hub \
-	git-flow \
-	node \
-	unrar \
-	wget \
-	fzf \
-	speedtest_cli \
-	fish \
 	ssh-copy-id \
+	terminal-notifier \
+	curl \
+	mitmproxy \
 	tree \
-	keybase gpg
+	node \
+	ffmpeg \
+	gnu-time \
+	gpg \
+	wget \
+	fish \
+	fzf \
+	htop \
+	scw \
+	speedtest_cli \
+	youtube-dl
 brew tap bfontaine/aliases
 
 if [ $(cat /private/etc/shells | grep $(which fish) | wc -l) -eq 0 ]; then
@@ -38,7 +44,8 @@ npm install -g \
 	coup-lights \
 	pkgfiles \
 	time-tracking \
-	url-decode-encode-cli
+	url-decode-encode-cli \
+	dependency-check
 
 
 
@@ -98,3 +105,4 @@ npm cache -g clean
 
 
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
+fisher install done
