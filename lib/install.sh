@@ -64,7 +64,8 @@ brew cask install \
 	telegram \
 	ccleaner \
 	monolingual \
-	disk-inventory-x
+	disk-inventory-x \
+	conductor
 
 
 
