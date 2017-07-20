@@ -70,6 +70,10 @@ if ask 'Stop asking to use new hard drives as Time Machine volume?'; then
 	defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 fi
 
+if ask 'Change Time Machine interval to 2h?'; then
+	sudo defaults write /System/Library/LaunchDaemons/com.apple.backupd-auto StartInterval -int 7200
+fi
+
 if ask 'Disable disk image verification?'; then
 	defaults write com.apple.frameworks.diskimages skip-verify -bool true
 	defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true

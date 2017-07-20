@@ -35,7 +35,7 @@ fi
 
 
 npm install -g \
-	http-server \
+	serve \
 	spot \
 	localtunnel \
 	npm-name-cli \
