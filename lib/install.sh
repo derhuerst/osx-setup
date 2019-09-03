@@ -106,4 +106,4 @@ npm cache -g clean
 
 
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
-fisher install done
+fisher add franciscolourenco/done
