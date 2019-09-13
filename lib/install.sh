@@ -3,6 +3,8 @@
 
 
 
+xcode-select --install
+
 # install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -26,7 +28,8 @@ brew install \
 	htop \
 	scw \
 	speedtest_cli \
-	youtube-dl
+	youtube-dl \
+	qrencode
 brew tap bfontaine/aliases
 
 if [ $(cat /private/etc/shells | grep $(which fish) | wc -l) -eq 0 ]; then
@@ -45,7 +48,8 @@ npm install -g \
 	pkgfiles \
 	time-tracking \
 	url-decode-encode-cli \
-	dependency-check
+	dependency-check \
+	travis-watch
 
 
 
