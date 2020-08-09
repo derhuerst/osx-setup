@@ -6,31 +6,48 @@
 xcode-select --install
 
 # install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-
+brew tap dandavison/delta https://github.com/dandavison/delta
 brew install \
 	asciinema \
-	git \
-	hub \
-	ssh-copy-id \
-	terminal-notifier \
+	bat \
+	coreutils \
 	curl \
-	mitmproxy \
-	tree \
-	node \
+	dwdiff \
 	ffmpeg \
-	gnu-time \
-	gpg \
-	wget \
+	findutils \
 	fish \
 	fzf \
+	git \
+	dandavison/delta/git-delta \
+	gnu-time \
+	gnupg \
+	grep \
 	htop \
-	scw \
-	speedtest_cli \
-	youtube-dl \
-	qrencode
-brew tap bfontaine/aliases
+	hub \
+	iperf3 \
+	jq \
+	miniupnpc \
+	mitmproxy \
+	moreutils \
+	mosh \
+	node \
+	pstree \
+	pv \
+	qrencode \
+	redis \
+	rename \
+	ripgrep \
+	speedtest-cli \
+	ssh-copy-id \
+	starship \
+	terminal-notifier \
+	tree \
+	watch \
+	wget \
+	xsv \
+	youtube-dl
 
 if [ $(cat /private/etc/shells | grep $(which fish) | wc -l) -eq 0 ]; then
 	sudo bash -c "echo $(which fish) >> /private/etc/shells"
