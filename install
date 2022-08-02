@@ -3,7 +3,6 @@
 
 
 eval "$(curl -sSL https://raw.githubusercontent.com/derhuerst/osx-setup/master/lib/ask.sh)"
-eval "$(curl -sSL https://raw.githubusercontent.com/derhuerst/osx-setup/master/lib/shrink.sh)"
 eval "$(curl -sSL https://raw.githubusercontent.com/derhuerst/osx-setup/master/lib/install.sh)"
 eval "$(curl -sSL https://raw.githubusercontent.com/derhuerst/osx-setup/master/lib/defaults.sh)"
 eval "$(curl -sSL https://raw.githubusercontent.com/derhuerst/osx-setup/master/lib/dotfiles.sh)"
