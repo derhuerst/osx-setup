@@ -29,11 +29,6 @@ if ask 'Disable menu bar transparency?'; then
 	defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 fi
 
-if ask 'Top right screen corner → Activate screen saver?'; then
-	defaults write com.apple.dock wvous-tr-corner -int 5
-	defaults write com.apple.dock wvous-tr-modifier -int 0
-fi
-
 if ask 'Expand save panel by default?'; then
 	defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 fi
@@ -42,15 +37,8 @@ if ask 'Expand print panel by default?'; then
 	defaults write NSGlobalDomain NSNavPanelExpandedStateForPrint -bool true
 fi
 
-if ask 'Disable the warning when file extensions?'; then
+if ask 'Disable the warning when changing file extensions?'; then
 	defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-fi
-
-if ask 'Show hard drives, servers, and removables on the desktop?'; then
-	defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-	defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
-	defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
-	defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 fi
 
 
@@ -61,31 +49,8 @@ if ask 'Show all processes in Activity Monitor?'; then
 	defaults write com.apple.ActivityMonitor ShowCategory -int 0
 fi
 
-if ask 'Sort Activity Monitor results by CPU usage?'; then
-	defaults write com.apple.ActivityMonitor SortColumn -string 'CPUUsage'
-	defaults write com.apple.ActivityMonitor SortDirection -int 0
-fi
-
 if ask 'Stop asking to use new hard drives as Time Machine volume?'; then
 	defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-fi
-
-if ask 'Change Time Machine interval to 2h?'; then
-	sudo defaults write /System/Library/LaunchDaemons/com.apple.backupd-auto StartInterval -int 7200
-fi
-
-if ask 'Disable disk image verification?'; then
-	defaults write com.apple.frameworks.diskimages skip-verify -bool true
-	defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
-	defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
-fi
-
-if ask 'Disable the "Are you sure you want to open this application?" check?'; then
-	defaults write com.apple.LaunchServices LSQuarantine -bool false
-fi
-
-if ask 'Enable HiDPI (Retina) display modes?'; then
-	sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 fi
 
 if ask 'Show ~/Library in Finder?'; then
@@ -104,24 +69,6 @@ fi
 
 if ask 'Disable guest account?'; then
 	sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool NO
-fi
-
-if ask 'Activity Monitor: Enable user-friendly columns?'; then
-	defaults write com.apple.ActivityMonitor "UserColumnsPerTab v4.0" -dict \
-	'0' '( Command, CPUUsage, Threads, PID, UID )' \
-	'1' '( Command, anonymousMemory, ResidentSize, Threads, PID, UID )' \
-	'2' '( Command, PowerScore, 12HRPower, AppSleep, graphicCard )' \
-	'3' '( Command, bytesWritten, bytesRead, PID, UID )' \
-	'4' '( Command, txBytes, rxBytes, PID, UID, CPUUsage )'
-fi
-
-if ask 'Activity Monitor: Enable user-friendly sorting?'; then
-	defaults write com.apple.ActivityMonitor UserColumnSortPerTab -dict \
-	'0' '{ direction = 0; sort = CPUUsage; }' \
-	'1' '{ direction = 0; sort = ResidentSize; }' \
-	'2' '{ direction = 0; sort = 12HRPower; }' \
-	'3' '{ direction = 0; sort = CPUUsage; }' \
-	'4' '{ direction = 0; sort = CPUUsage; }'
 fi
 
 
@@ -152,14 +99,6 @@ if ask 'Hide useless things in Spotlight?'; then
 		'{"enabled" = 0;"name" = "MENU_EXPRESSION";}' \
 		'{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
 		'{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
-fi
-
-if ask 'Rebuild the index from scratch?'; then
-	sudo mdutil -E / > /dev/null
-fi
-
-if ask 'Restart Spotlight now?'; then
-	killall mds > /dev/null 2>&1
 fi
 
 
@@ -242,13 +181,6 @@ fi
 
 # Mission Control
 
-if ask 'Hide Dashboard as a Space?'; then
-	defaults write com.apple.dock dashboard-in-overlay -bool true
-	if ask 'Disable Dashboard completely?'; then
-		defaults write com.apple.dashboard mcx-disabled -bool true
-	fi
-fi
-
 if ask 'Show & hide Mission Control instantly.'; then
 	defaults write com.apple.dock expose-animation-duration -float 0.1
 fi
@@ -314,10 +246,6 @@ if ask 'Set Safari’s home page to `about:blank`?'; then
 	defaults write com.apple.Safari HomePage -string 'about:blank'
 fi
 
-if ask 'Disable Safari’s thumbnail cache for History and Top Sites?'; then
-	defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
-fi
-
 if ask 'Enable Safari’s debug menu?'; then
 	defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 fi
@@ -380,10 +308,6 @@ fi
 
 # Miscellaneous
 
-if ask 'Enable AirDrop over Ethernet?'; then
-	defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
-fi
-
 if ask 'Disable the warning before emptying the Trash?'; then
 	defaults write com.apple.finder WarnOnEmptyTrash -bool false
 fi
@@ -411,10 +335,6 @@ fi
 if ask 'Disable send and reply animations in Mail.app?'; then
 	defaults write com.apple.mail DisableReplyAnimations -bool true
 	defaults write com.apple.mail DisableSendAnimations -bool true
-fi
-
-if ask 'Add a Web Inspector context menu item in web views?'; then
-	defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 fi
 
 if ask 'Enable snap-to-grid for desktop icons?'; then
